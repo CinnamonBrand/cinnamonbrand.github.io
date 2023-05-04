@@ -1,0 +1,110 @@
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/*inizio menu*/
+
+header {
+    height: 10vh;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .wrapper{
+    text-align:center;
+    margin:50px auto;
+  }
+  
+  .tabs{
+    
+    margin-top:50px;
+    font-size:15px;
+    padding:0px;
+    list-style:none;
+    background:#000000;
+    box-shadow:0px 5px 20px rgba(0, 0, 0, 0);
+    display:inline-block;
+    border-radius:50px;
+    position:relative;
+  }
+  
+  .tabs a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform:uppercase;
+    padding:10px 20px;
+    display:inline-block;
+    position:relative;
+    z-index:1;
+    transition-duration:0.6s;
+  }
+  
+  .tabs a:hover {
+      font-weight: bold;
+  }
+  
+  .tabs a i{
+    margin-right:5px;
+  }
+  
+  .tabs .selector{
+    height:100%;
+    display:inline-block;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:1;
+    border-radius:50px;
+    transition-duration:0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    background: #05abe0;
+    background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
+    background: -webkit-linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+    background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
+  }
+  
+  /*fine menu*/
+  
+  /* container testo */
+  
+  .slideshow {
+      display: flex;
+      height: 40vh;
+      margin-left: 1vh;
+      margin-right: 1vh; 
+      background-color: #000000;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+  }
+  
+  .slideshow p {
+      text-align: center;
+      color: #ffffff;
+  }
+  
+  .h1 {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  /* fine container */
+  
