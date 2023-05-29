@@ -1,0 +1,135 @@
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    margin-top: 5vh;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        margin-top: 7vh;
+    }
+}
+
+.navbar {
+    color: lightgray;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 5vh;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar a {
+    text-transform: uppercase;
+    padding: 1vh;
+}
+
+.navbar a:nth-child(1) {
+    justify-self: end;
+}
+
+.navbar a:nth-child(2) {
+    justify-self: start;
+}
+
+.navbar a:hover {
+    color: yellow;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        height: 7vh;
+    }
+}
+
+.inspire {
+    text-align: center;
+    padding: 5vh 0;
+}
+
+.inspire h1 {
+    font-size: 4rem;
+}
+
+.inspire h3 {
+    color: lightgray;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+    .inspire h1 {
+        font-size: 3rem;
+    }
+}
+
+.inspire-container {
+    column-count: 4;
+    grid-gap: 1rem;
+    margin: 0 1rem;
+}
+
+.inspire-container img {
+    width: 100%;
+    vertical-align: bottom;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .inspire-container {
+        column-count: 2;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .inspire-container {
+        column-count: 1;
+    }
+}
+
+.footer-container {
+    height: 5vh;
+    display: grid;
+    color: black;
+    background: yellow;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer-container p {
+    align-self: end;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-container p {
+        font-size: .8rem;
+    }
+}
